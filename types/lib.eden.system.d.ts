@@ -6,13 +6,6 @@ declare namespace Eden {
       Legacy = "Legacy",
       UEFI = "UEFI",
     }
-  
-    // export interface KitInfo {
-    //   readonly drive?: string;
-    //   readonly drives: string[];
-    //   readonly version: string;
-    //   readonly packages: number;
-    // }
 
     export class System {
       refresh(): boolean
@@ -53,16 +46,8 @@ declare namespace Eden {
       frequency(): number
     }
 
-    export class Platform {
-      triple(): string
-      arch(): string
-      os(): string
-      env(): string
-      tier(): string
-    }
   }
-
-  export const platform: os.Platform
+  
   export const system: os.System
 
 }
